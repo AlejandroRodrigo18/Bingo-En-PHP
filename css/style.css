@@ -52,13 +52,13 @@ body{
 .grid__button:hover{
 
     background-color: #dbc074; 
-    font-size: 80%;
+    font-size: 75%;
     
 }
 
 .grid__button:active{
 
-    opacity: 0.80;
+    opacity: 0.60;
 }
 
 .grid__a{
