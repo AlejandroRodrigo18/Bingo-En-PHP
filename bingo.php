@@ -6,8 +6,10 @@
         <title>Bingo</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="body__php">
+        <div class="body__shadow"></div>
 
+        <div class="grid-php">
             <?php
             function dbg_mostrar_matriz($matriz, $titulo) {
                 echo "<p class='temporal'>$titulo<br></p>";
@@ -72,5 +74,8 @@
             $participantes = generar_participantes(4, 3);
 
             ?>      
+
+        </div>
+
     </body>
 </html>
