@@ -109,31 +109,71 @@
     z-index: 1;                      
 }
 
-.grid-php {
+.grid__php {
     position: relative;
     z-index: 2;                
 }
 
 
 /* --- GRID + TABLAS --- */
-table {
+.grid__php{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 18vh repeat(3,25vh);
+
+    grid-auto-flow: column;
+    grid-auto-rows: 1fr;
+    
+    gap: 15px;
+    padding: 0 20px 0 20px;
+
+    align-items: center;
+    justify-items: center;
+
+    
+}
+
+/* Primera fila */
+.grid__php-div:first-child{
+    grid-column-end: span 4;
+}
+
+.grid__php-div:first-child h1{
+
+    padding:15px 0 5px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.grid__php-div:first-child button{
+
+    background-color: #d9ad26;
+    padding: 15px 30px 15px 30px;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+
+}
+
+
+/* Tablas */
+.grid__php-table {
     border-collapse: collapse;
     text-align: center;
     margin-bottom: 40px;
 }
 
-td {
+.grid__php-div p {
+    padding:30px 0 5px 0;
+}
+
+.grid__php-td {
     width: 40px;
     height: 40px;
     text-align: center;
     border: 1px solid  #d9ad26;
 }
 
-.temporal{
-    color: #d9ad26;
-} /*Temporal*/
-
-.prueba{
-    text-align: center;
-    color: #d9ad26;
-}
+/* DISEÑO DE LAS TABLAS, DISEÑO DEL BOTON Y EMPEZAR CON JS PARA EDITAR LAS CELDAS */
+/* CREAR UN MOSTRAR BOLAS  */

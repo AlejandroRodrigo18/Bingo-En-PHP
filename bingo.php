@@ -9,21 +9,29 @@
     <body class="body__php">
         <div class="body__shadow"></div>
 
-        <div class="grid-php">
+        <div class="grid__php">
+            <div class="grid__php-div">
+                <h1>BINGO</h1>
+                <button>Jugar</button>
+            </div>
+
+
             <?php
             function dbg_mostrar_matriz($matriz, $titulo) {
-                echo "<p class='temporal'>$titulo<br></p>";
-                echo "<table>";
+                echo "<div class='grid__php-div'>";
+                echo "<p>$titulo</p>";
+                echo "<table class='grid__php-table'>";
 
                 for ($i = 0; $i < count($matriz); $i++) {
                     echo "<tr>";
                     for ($j = 0; $j < count($matriz[0]); $j++) {
-                        echo "<td>".$matriz[$i][$j]."</td>";
+                        echo "<td class='grid__php-td'>".$matriz[$i][$j]."</td>";
                     }
                     echo "</tr>";
                 }
 
                 echo "</table>";
+                echo "</div>";
             }
 
             function generar_participantes($num_jugadores, $num_cartones) {
