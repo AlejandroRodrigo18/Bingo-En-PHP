@@ -1,39 +1,52 @@
-* {
+    * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
+    color: #fff;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: #000;
+    color: #ffffff;
     /*background-color: #ec53a0;*/
-    /*background-image: ;*/
+    background-image: url("../images/fondo_negro_y_dorado.png");
 }   
 .grid{
     display: grid;
     grid-template-columns: 1fr; 
-    height: 90vh;
+    height: 85vh;
     width: 100%;
     text-align: center;
     align-items: center;
 }
 
+.grid__h1{
+    margin-bottom: 30px;
+}
+
 .grid__item{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+}
+
+.grid__item:first-child{
+    padding-top: 100px;
 }
 
 .grid__button{
 
     border-radius: 12px;
-    padding: 30px 45px 30px 45px;
+    padding: 35px 60px 35px 60px;
+    font-size: 1.5rem;
+    margin-bottom: 160px;
+    transition: .45s ease;
+    margin-top: 60px;
     
 }
 
 .grid__button:hover{
 
-    opacity: 0.75;
+    background-color: #dbc074; 
+    
 }
 
 .grid__a{
@@ -42,14 +55,23 @@ body{
         font-weight: bolder;
 }
 
+.grid__footer {
+    position: relative;
+    height: 15vh;
+}
 
-.grid__footer{
-    height: 10vh;
-    background-color: #000;
-    text-align: center;
+.grid__footer_back {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #564107, transparent);
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .grid__footer p {
-    padding-top: 30px;
-    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding-top: 70px;
+    text-align: center;
+    color: white;
 }
