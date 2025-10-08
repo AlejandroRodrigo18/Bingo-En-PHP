@@ -4,25 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bingo</title>
-        <style>
-            table {
-                border-collapse: collapse;
-                text-align: center;
-                margin-bottom: 40px;
-            }
-
-            td {
-                width: 40px;
-                height: 40px;
-                text-align: center;
-                border: 1px solid black;
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <?php
+
+            <?php
             function dbg_mostrar_matriz($matriz, $titulo) {
-                echo "<p>$titulo<br></p>";
+                echo "<p class='temporal'>$titulo<br></p>";
                 echo "<table>";
 
                 for ($i = 0; $i < count($matriz); $i++) {
@@ -83,6 +71,6 @@
 
             $participantes = generar_participantes(4, 3);
 
-        ?>
+            ?>      
     </body>
 </html>
