@@ -148,12 +148,17 @@
 
 .grid__php-div:first-child button{
 
-    background-color: #d9ad26;
+    background-color: #da24;
     padding: 15px 30px 15px 30px;
     border-radius: 12px;
+    border: transparent;
     display: block;
     margin: auto;
 
+}
+
+.grid__php-div:first-child button:hover{
+    opacity: 0.70;
 }
 
 
