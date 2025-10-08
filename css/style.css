@@ -11,6 +11,8 @@ body{
     /*background-color: #ec53a0;*/
     background-image: url("../images/fondo_negro_y_dorado.png");
 }   
+
+
 .grid{
     display: grid;
     grid-template-columns: 1fr; 
@@ -26,7 +28,11 @@ body{
 
 .grid__item{
     font-size: 2.4rem;
+    transition-property: font-size;
+    transition: 0.45s ease;
 }
+
+
 
 .grid__item:first-child{
     padding-top: 100px;
@@ -38,7 +44,7 @@ body{
     padding: 35px 60px 35px 60px;
     font-size: 1.5rem;
     margin-bottom: 160px;
-    transition: .45s ease;
+    transition: .5s ease;
     margin-top: 60px;
     
 }
@@ -46,7 +52,13 @@ body{
 .grid__button:hover{
 
     background-color: #dbc074; 
+    font-size: 80%;
     
+}
+
+.grid__button:active{
+
+    opacity: 0.80;
 }
 
 .grid__a{
