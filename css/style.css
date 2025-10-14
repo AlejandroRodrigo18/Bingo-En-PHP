@@ -166,11 +166,11 @@
 .grid__php-table {
     border-collapse: collapse;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .grid__php-div p {
-    padding:30px 0 5px 0;
+    padding:10px 0 5px 0;
 }
 
 .grid__php-td {
@@ -179,6 +179,3 @@
     text-align: center;
     border: 1px solid  #d9ad26;
 }
-
-/* DISEÑO DE LAS TABLAS, DISEÑO DEL BOTON Y EMPEZAR CON JS PARA EDITAR LAS CELDAS */
-/* CREAR UN MOSTRAR BOLAS  */

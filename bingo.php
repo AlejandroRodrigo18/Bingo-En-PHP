@@ -11,12 +11,12 @@
 
         <div class="grid__php">
             <div class="grid__php-div">
-                <h1>BINGO</h1>
-                <button>Jugar</button>
+                <h3>EL GANADOR ES JUGADOR N</h3>
             </div>
 
 
             <?php
+            
             function dbg_mostrar_matriz($matriz, $titulo) {
                 echo "<div class='grid__php-div'>";
                 echo "<p>$titulo</p>";
@@ -79,10 +79,10 @@
                 return $carton;
             }
 
-            $participantes = generar_participantes(4, 3);
+            $participantes = generar_participantes(4,3);
+            ?>
 
-            ?>      
-
+            
         </div>
 
     </body>
