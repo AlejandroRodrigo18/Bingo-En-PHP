@@ -136,8 +136,18 @@
 
 /* Primera fila */
 .grid__php-div:first-child{
-    grid-column-end: span 4;
+    grid-column-end: span 3;
 }
+
+.grid__php-div:nth-child(2){
+
+    grid-column: 4; 
+    grid-row: 1;    
+    font-size: 1rem;
+    text-align: center;
+}
+
+
 
 .grid__php-div:first-child h1{
 

@@ -110,7 +110,9 @@
                 
                                 // Si el cartón tiene 15 números tachados → hay ganador
                                 if ($contador == 15) {
-                                    echo "<h2>El ganador es el jugador ".($jugador + 1)." con el cartón ".($carton + 1)."</h2>";
+                                    echo "<div class='grid__php-div'>";
+                                    echo "<h2>El ganador es el jugador ".($jugador + 1)." <br> con el cartón ".($carton + 1)."</h2>";
+                                    echo "</div>";
                                     $ganador = true;
                                     break 2; // salir de ambos for
                                 }
