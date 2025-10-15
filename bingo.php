@@ -16,15 +16,15 @@
 
 
             <?php
-                function dbg_mostrar_matriz($matriz, $titulo) {
+                function mostrar_carton($carton, $titulo) {
                     echo "<div class='grid__php-div'>";
                     echo "<p>$titulo</p>";
                     echo "<table class='grid__php-table'>";
 
-                    for ($i = 0; $i < count($matriz); $i++) {
+                    for ($i = 0; $i < count($carton); $i++) {
                         echo "<tr>";
-                        for ($j = 0; $j < count($matriz[0]); $j++) {
-                            echo "<td class='grid__php-td'>".$matriz[$i][$j]."</td>";
+                        for ($j = 0; $j < count($carton[0]); $j++) {
+                            echo "<td class='grid__php-td'>".$carton[$i][$j]."</td>";
                         }
                         echo "</tr>";
                     }
@@ -123,7 +123,7 @@
                     // Mostrar resultado final: todos los cartones con sus X
                     foreach ($participantes as $i => $jugador) {
                         foreach ($jugador as $j => $carton) {
-                            dbg_mostrar_matriz($carton, "Jugador ".($i + 1).", Cartón ".($j + 1));
+                            mostrar_carton($carton, "Jugador ".($i + 1).", Cartón ".($j + 1));
                         }
                     }
                 }
